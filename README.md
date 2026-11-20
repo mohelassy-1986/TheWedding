@@ -1,31 +1,19 @@
-# Moustafa & Lina Wedding Guestbook
+# Moustafa & Lina Wedding Guestbook - Final Edition
 
-This package is already connected to the supplied Google Apps Script `/exec` URL.
-
-## Google Apps Script
-
-1. Open **Wedding Guestbook Backend** in Google Apps Script.
-2. Replace the full contents of `Code.gs` with the supplied `Code.gs` file.
-3. Save.
-4. Select `setupGuestbook` and click **Run** once. Approve Drive and Sheets access if requested.
-5. Go to **Deploy > Manage deployments**.
-6. Edit the existing web-app deployment, choose **New version**, and deploy.
-7. Keep **Execute as: Me** and access set to **Anyone**.
+Wedding date: 21 November 2026 / ٢١ نوفمبر ٢٠٢٦.
 
 ## GitHub Pages
+Upload `index.html`, `Code.gs`, `README.md`, `.gitignore`, and the complete `assets` folder to the repository root. In GitHub: Settings > Pages > Deploy from a branch > main > /(root).
 
-1. Create a repository named `moustafa-lina-wedding-guestbook`.
-2. Upload `index.html`, `README.md`, `.gitignore`, and optionally `Code.gs` to the repository root.
-3. Commit to `main`.
-4. Open **Settings > Pages**.
-5. Choose **Deploy from a branch**, then `main` and `/(root)`.
-6. Open the HTTPS Pages URL after publication.
+## Google Apps Script
+Replace the Apps Script project's `Code.gs` with the supplied file, save, run `setupGuestbook`, then update the existing web-app deployment to a new version. Keep Execute as Me and access Anyone.
 
-## Test
+## Final test
+1. Open the GitHub Pages HTTPS link.
+2. Confirm Connected to Google Drive.
+3. Submit text, photo, signature, and voice tests.
+4. Open Keepsake Book and confirm entries appear.
+5. Voice entries should show QR codes in Book mode.
+6. Print / Save as PDF from Book mode.
 
-1. The site status should show **Connected to Google Drive**.
-2. Submit a text wish and check the `Wedding Guestbook Data` sheet.
-3. Submit a photo, signature, and short voice wish and check the corresponding Drive folders.
-4. Open the Pages URL on a second phone and click **Sync**.
-
-Uploaded media is configured as **Anyone with the link can view**, so it can render in the shared guestbook. The root Drive folder itself is not made public by this code.
+The two sample entries are display-only and disappear as soon as real entries load.
